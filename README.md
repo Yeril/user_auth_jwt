@@ -25,6 +25,13 @@ $ php bin/console doctrine:database:create
 $ php bin/console doctrine:schema:update --force
 ```
 
+Regenerate keys
+---------------
+```sh
+$ php bin/console lexik:jwt:generate-keypair
+```
+Your keys will land in config/jwt/private.pem and config/jwt/public.pem (unless you configured a different path).
+
 Usage
 ------
 Recommended enabling TLS for local server:
