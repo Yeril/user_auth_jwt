@@ -1,0 +1,20 @@
+register:
+    path: /register
+    controller: App\Controller\DefaultController::register
+    methods: POST
+
+api:
+    path: /api
+    controller: App\Controller\DefaultController::api
+
+api_logout:
+    path: /api/logout
+    controller: App\Controller\DefaultController::logout
+
+login_check:
+    path:     /login_check
+    methods:  [POST]
+
+gesdinet_jwt_refresh_token:
+    path: /api/token/refresh
+    methods:  [POST]
